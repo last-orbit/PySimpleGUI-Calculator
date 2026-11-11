@@ -1,9 +1,0 @@
-#!/bin/sh
-'''exec' "/Users/robertortiz/Desktop/Dev/Learning /calculator/calculator/bin/python" "$0" "$@"
-' '''
-import sys
-from PySimpleGUI.PySimpleGUI import main_get_debug_data
-if __name__ == '__main__':
-    if sys.argv[0].endswith('.exe'):
-        sys.argv[0] = sys.argv[0][:-4]
-    sys.exit(main_get_debug_data())
